@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://b0edelq78t3rx"]
+
+[ext_resource type="Script" uid="uid://cb47upv3gnyjs" path="res://main.gd" id="1_ig7tw"]
+[ext_resource type="Texture2D" uid="uid://1d7eexj3bkmg" path="res://icon.svg" id="2_0xm2m"]
+
+[node name="Main" type="Node2D" unique_id=566278333]
+position = Vector2(598, 354)
+script = ExtResource("1_ig7tw")
+
+[node name="Box1" type="Button" parent="." unique_id=1978587148]
+offset_left = -153.0
+offset_top = -92.0
+offset_right = -83.0
+offset_bottom = -35.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Box2" type="Button" parent="." unique_id=1638927664]
+offset_left = 73.0
+offset_top = -95.0
+offset_right = 146.0
+offset_bottom = -36.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Box3" type="Button" parent="." unique_id=1967708281]
+offset_left = -35.0
+offset_top = -33.0
+offset_right = 38.0
+offset_bottom = 31.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Box4" type="Button" parent="." unique_id=744408562]
+offset_left = -153.0
+offset_top = 39.0
+offset_right = -86.0
+offset_bottom = 100.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Box5" type="Button" parent="." unique_id=431951757]
+offset_left = 79.0
+offset_top = 36.0
+offset_right = 148.0
+offset_bottom = 92.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="." unique_id=1224305902]
+modulate = Color(0.5533441, 0.9890924, 0.69775087, 1)
+visibility_layer = 4
+offset_left = -76.0
+offset_top = -181.0
+offset_right = 73.0
+offset_bottom = -152.0
+text = "Antika Parçayı Bul!"
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=97235836]
+visible = false
+texture = ExtResource("2_0xm2m")
+
+[connection signal="pressed" from="Box1" to="." method="_on_box_1_pressed"]
+[connection signal="pressed" from="Box2" to="." method="_on_box_2_pressed"]
+[connection signal="pressed" from="Box3" to="." method="_on_box_3_pressed"]
+[connection signal="pressed" from="Box4" to="." method="_on_box_4_pressed"]
+[connection signal="pressed" from="Box5" to="." method="_on_box_5_pressed"]
