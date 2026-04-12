@@ -1,5 +1,5 @@
 extends Node2D
-
+echo ".godot/" > .gitignore
 var dogru_kupa_no : int # Bilgisayarın gizlediği doğru kutu numarası
 
 # Oyun ilk açıldığında çalışacak kısım
