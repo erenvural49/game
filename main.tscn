@@ -2,9 +2,11 @@
 
 [ext_resource type="Script" uid="uid://cb47upv3gnyjs" path="res://main.gd" id="1_ig7tw"]
 [ext_resource type="Texture2D" uid="uid://1d7eexj3bkmg" path="res://icon.svg" id="2_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://p7abufr7xyk4" path="res://BackGroundNeedleGame.png" id="3_h2yge"]
+[ext_resource type="Texture2D" uid="uid://dmnikpwxa2vof" path="res://needle.png" id="4_1bvp3"]
 
 [node name="Main" type="Node2D" unique_id=566278333]
-position = Vector2(598, 354)
+position = Vector2(218, 220)
 script = ExtResource("1_ig7tw")
 
 [node name="Box1" type="Button" parent="." unique_id=1978587148]
@@ -15,17 +17,17 @@ offset_bottom = -35.0
 metadata/_edit_use_anchors_ = true
 
 [node name="Box2" type="Button" parent="." unique_id=1638927664]
-offset_left = 73.0
-offset_top = -95.0
-offset_right = 146.0
-offset_bottom = -36.0
+offset_left = 81.0
+offset_top = -99.0
+offset_right = 154.0
+offset_bottom = -40.0
 metadata/_edit_use_anchors_ = true
 
 [node name="Box3" type="Button" parent="." unique_id=1967708281]
-offset_left = -35.0
-offset_top = -33.0
-offset_right = 38.0
-offset_bottom = 31.0
+offset_left = -32.0
+offset_top = -34.0
+offset_right = 41.0
+offset_bottom = 30.0
 metadata/_edit_use_anchors_ = true
 
 [node name="Box4" type="Button" parent="." unique_id=744408562]
@@ -55,6 +57,16 @@ metadata/_edit_use_anchors_ = true
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=97235836]
 visible = false
 texture = ExtResource("2_0xm2m")
+
+[node name="BackGroundSpeedoMeter" type="Sprite2D" parent="." unique_id=430114853]
+position = Vector2(198, 269)
+scale = Vector2(0.11061983, 0.20018172)
+texture = ExtResource("3_h2yge")
+
+[node name="Needle" type="Sprite2D" parent="BackGroundSpeedoMeter" unique_id=1693384240]
+position = Vector2(-99.43977, 179.83652)
+scale = Vector2(4.1722927, 2.334328)
+texture = ExtResource("4_1bvp3")
 
 [connection signal="pressed" from="Box1" to="." method="_on_box_1_pressed"]
 [connection signal="pressed" from="Box2" to="." method="_on_box_2_pressed"]
