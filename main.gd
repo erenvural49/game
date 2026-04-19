@@ -4,7 +4,7 @@ extends Node2D
 var dogru_kupa_no : int # Bilgisayarın gizlediği doğru kutu numarası
 
 # --- 2. MİNİ OYUN: HIZ İBRESİ (Yatay Bar) ---
-var move_speed: float = 10.0 # İbrenin gidiş geliş hızı
+var move_speed: float = 5.0 # İbrenin gidiş geliş hızı
 var max_distance: float = 2450.0 # İbrenin merkezden sağa/sola maksimum kaç piksel gideceği
 var green_zone_limit: float = 460.0 # Yeşil alanın piksel sınırı (Merkezden sağa sola hata payı)
 
@@ -16,13 +16,13 @@ var meter_attempts: int = 3
 @onready var needle_sprite = $BackGroundSpeedoMeter/Needle
 # İbrenin sıfır (0) noktasına, yani yatay barın tam orta merkezine yerleştirildiğini varsayıyoruz.
 
-# Oyun ilk açıldığında çalışacak kısım
+#When the game start this code will execute
 func _ready() -> void:
-	# Kupa Oyunu Başlangıç
-	dogru_kupa_no = randi_range(1, 5)
+	#randomly select a true box 
+	dogru_kupa_no = randi_range(1, 5) 
 	print("Doğru kutu: ", dogru_kupa_no)
 	
-	# İbre Oyunu Başlangıç
+	#Speed game begins
 	start_meter_round()
 
 # --- İBRE OYUNUNUN ÇALIŞMA MANTIĞI ---
@@ -35,9 +35,12 @@ func _process(delta: float) -> void:
 		# -cos() fonksiyonu 0. saniyede -1 (en sol) değerini verir.
 		# Sonra 0'a (orta), sonra 1'e (en sağ) gider ve tekrar geri döner.
 		# Bu sayede tam istediğin gibi uçlarda yavaş, ortada çok hızlı bir hareket yakalanır.
+		# Represent the ration of the needle according to background
+		# -1 leftmost, 0 middle, 1 rightmost
 		var current_swing = -cos(time_passed * move_speed) 
+
 		
-		# Biraz piksel cinsine çevir
+		# Currently needle position x value holds -2450 to 2450
 		var current_x = current_swing * max_distance
 		
 		# Eğer sahnene ibre eklediysen yorumu aç:

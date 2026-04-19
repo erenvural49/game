@@ -64,8 +64,8 @@ scale = Vector2(0.11061983, 0.20018172)
 texture = ExtResource("3_h2yge")
 
 [node name="Needle" type="Sprite2D" parent="BackGroundSpeedoMeter" unique_id=1693384240]
-position = Vector2(-99.43977, 179.83652)
-scale = Vector2(4.1722927, 2.334328)
+position = Vector2(-2413.6724, 174.84111)
+scale = Vector2(4.589522, 2.427699)
 texture = ExtResource("4_1bvp3")
 
 [connection signal="pressed" from="Box1" to="." method="_on_box_1_pressed"]

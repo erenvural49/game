@@ -1,7 +1,7 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1776167071
+::res://::1776339384
 BackGroundNeedleGame.png::CompressedTexture2D::1118895587501425513::1776165273::1776165275::1::::<><><>0<>0<>1405eb315ca177aee2789798b0e4d657<>res://.godot/imported/BackGroundNeedleGame.png-c64ddbaba92bb8460de6d808d40aee11.ctex::
 icon.svg::CompressedTexture2D::1833053400865457390::1775978124::1775978134::1::::<><><>0<>0<>c9503ca2af8730c62e22d8f065daba1b<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-main.gd::GDScript::4904876647110486572::1776166997::0::1::::<>Node2D<><>0<>0<><>::
-main.tscn::PackedScene::4149589183786603377::1776166502::0::1::::<><><>0<>0<><>::uid://cb47upv3gnyjs::::res://main.gd<>uid://1d7eexj3bkmg::::res://icon.svg<>uid://p7abufr7xyk4::::res://BackGroundNeedleGame.png<>uid://dmnikpwxa2vof::::res://needle.png
+main.gd::GDScript::4904876647110486572::1776276835::0::1::::<>Node2D<><>0<>0<><>::
+main.tscn::PackedScene::4149589183786603377::1776277142::0::1::::<><><>0<>0<><>::uid://cb47upv3gnyjs::::res://main.gd<>uid://1d7eexj3bkmg::::res://icon.svg<>uid://p7abufr7xyk4::::res://BackGroundNeedleGame.png<>uid://dmnikpwxa2vof::::res://needle.png
 needle.png::CompressedTexture2D::8028869502301699565::1776166160::1776166160::1::::<><><>0<>0<>8afb2f2aba169e4fe4f7eed3904f3243<>res://.godot/imported/needle.png-d042151c6ed2ac38158307b5d67f73c2.ctex::
